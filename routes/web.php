@@ -37,3 +37,8 @@ Route::group(['prefix' => 'user'], function(){
     Route::get('eboxes/{ebox}', 'EboxController@get');
     Route::delete('eboxes/delete', 'EboxController@destroy');
 });
+
+Route::group(['prefix' => 'company'], function (){
+    Route::get('services', 'ListController@index');
+    Route::get('services/save', 'ListController@store');
+});
