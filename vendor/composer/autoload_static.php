@@ -281,14 +281,17 @@ class ComposerStaticInit291aa61b5134ff6a79fd62ae938c1ac7
 
     public static $classMap = array (
         'CreateCustomerTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_160116_create_customer_types_table.php',
+        'CreateDeveloperAccountsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_185751_create_developer_accounts_table.php',
         'CreateDispatchesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_182716_create_dispatches_table.php',
         'CreateEboxesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_212042_create_eboxes_table.php',
         'CreateInboxView' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_175756_create_inbox_view.php',
-        'CreateListsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_164809_create_lists_table.php',
+        'CreateListNotificationsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_182910_create_list_notifications_table.php',
+        'CreateListsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_175413_create_lists_table.php',
         'CreateNotificationTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_221237_create_notification_types_table.php',
         'CreateNotificationsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_221300_create_notifications_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePostOfficesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_210145_create_post_offices_table.php',
+        'CreateSubscriptionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_184016_create_subscriptions_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'CustomerTypeSeeder' => __DIR__ . '/../..' . '/database/seeds/CustomerTypeSeeder.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
