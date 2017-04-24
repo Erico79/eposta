@@ -27,6 +27,8 @@ Route::group(['prefix' => 'user'], function(){
     Route::post('notification/upload-files', 'NotificationController@upload');
     Route::get('notification/sent', 'NotificationController@sent');
     Route::get('notifications/sent', 'NotificationController@getSent');
+    Route::get('notification/inbox', 'NotificationController@inbox');
+    Route::get('notifications/inbox', 'NotificationController@getSent');
 
     // boxes
     Route::get('eboxes', 'EboxController@index');

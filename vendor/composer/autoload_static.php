@@ -283,6 +283,7 @@ class ComposerStaticInit291aa61b5134ff6a79fd62ae938c1ac7
         'CreateCustomerTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_160116_create_customer_types_table.php',
         'CreateDispatchesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_182716_create_dispatches_table.php',
         'CreateEboxesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_212042_create_eboxes_table.php',
+        'CreateInboxView' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_175756_create_inbox_view.php',
         'CreateListsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_24_164809_create_lists_table.php',
         'CreateNotificationTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_221237_create_notification_types_table.php',
         'CreateNotificationsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_221300_create_notifications_table.php',

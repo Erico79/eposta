@@ -67,9 +67,9 @@
                     <label for="box">Box Number:</label>
                     <input type="text" name="box" id="box" class="span12" required>
                 </div>
+                <label for="postal_code">Postal Code:</label>
                 <div class="row-fluid">
-                    <label for="postal_code">Postal Code:</label>
-                    <input type="text" name="postal_code" id="postal_code" class="span12" required>
+                    <input type="hidden" url="{{ url('api/load-pos') }}" name="postal_code" id="live_box_no" class="span12 select2" required>
                 </div>
             </div>
             <div class="modal-footer">

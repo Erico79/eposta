@@ -7,6 +7,7 @@ use App\Notification;
 use App\NotificationType;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Yajra\Datatables\Datatables;
@@ -20,6 +21,10 @@ class NotificationController extends Controller
 
     public function sent(){
         return view('notifications.sent');
+    }
+
+    public function inbox(){
+        return view('notifications.inbox');
     }
 
     public function getSent(Ebox $ebox){
@@ -48,9 +53,9 @@ class NotificationController extends Controller
         // get user's boxes
         $my_boxes = $ebox->myBoxes();
 
-        $sent_notifications = Notification::whereIn('sender_ebox_id', $my_boxes);
+        $inbox = DB::table('inbox')->whereIn('ebox_id', $my_boxes);
 
-        return Datatables::of($sent_notifications)
+        return Datatables::of($inbox)
             ->addColumn('uploaded_files', function ($notification){
                 $data = json_decode($notification->data, true);
 

@@ -25,7 +25,7 @@ $("#live_box_no").select2({
     placeholder: "Search for a Postal Code",
     minimumInputLength: 2,
     ajax: { // instead of writing the function to execute the request we use Select2's convenient helper
-        url: "api/load-pos",
+        url: $("#live_box_no").attr('url'),
         dataType: 'json',
         data: function (term, page) {
             return {

@@ -1,7 +1,7 @@
 @extends('layouts.dt')
-@section('title', 'Sent')
-@section('page-title', 'Sent Notifications')
-@section('widget-title', 'Sent Notifications')
+@section('title', 'Inbox')
+@section('page-title', 'Inbox')
+@section('widget-title', 'Inbox')
 
 @push('css')
     <style>
@@ -50,11 +50,11 @@
     <script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.1.1/js/responsive.bootstrap.min.js"></script>
     <script>
-        $('#sent-notifications').DataTable({
+        $('#inbox').DataTable({
             "sDom": 'T<"clear">lfrtip',
             processing: true,
             serverSide: true,
-            ajax: $('#sent-notifications').attr('url'),
+            ajax: $('#inbox').attr('url'),
             columns: [
                 { data: 'subject', 'name': 'subject' },
                 { data: 'uploaded_files', 'name': 'uploaded_files' },
@@ -94,7 +94,7 @@
 
 @section('content')
     <div class="span12">
-        <table id="sent-notifications" url="{{ url('user/notifications/sent') }}" class="table table-bordered dt-responsive" cellspacing="0" width="100%">
+        <table id="inbox" url="{{ url('user/notifications/inbox') }}" class="table table-bordered dt-responsive" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>Subject</th>
